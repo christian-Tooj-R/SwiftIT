@@ -336,9 +336,10 @@ i.fa.fa-angle-left {
 }
 
 .about_section {
-    width: 100%;
+    width: 76%;
     float: left;
     padding-bottom: 90px;
+    margin-left:200px;
 }
 
 .about_main {
@@ -858,17 +859,17 @@ i.fa.fa-angle-left {
 }
 
 .card-header {
-    padding: .75rem 0px;
+    /*padding: .75rem 0px;
     margin-bottom: 0;
     background-color: transparent;
-    border-bottom: 1px solid #b7b7b7;
+    border-bottom: 1px solid #b7b7b7;*/
 }
 
 .card {
-    border: 1px solid #b7b7b7;
+    /*border: 1px solid #b7b7b7;
     border-left: 0px !important;
     border-right: 0px !important;
-    border-radius: 0px;
+    border-radius: 0px;*/
 }
 
 .clients_section {
@@ -1285,3 +1286,4 @@ input.mail_text::placeholder {
 .margin_90 {
     margin: 90px 0px;
 }
+

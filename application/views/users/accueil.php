@@ -35,9 +35,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                <div class="navbar-nav">
-                  <a class="nav-item nav-link" href="index.html">Home</a>
-                  <a class="nav-item nav-link" href="about.html">About</a>
-                  <a class="nav-item nav-link" href="teashop.html">Teashop</a>
+                  <a class="nav-item nav-link" href="<?php echo site_url("accueilController/toggle/1");?>">Home</a>
+                  <a class="nav-item nav-link" href="<?php echo site_url("accueilController/toggle/2");?>">Cv Post</a>
+                  <a class="nav-item nav-link" href="<?php echo site_url("accueilController/toggle/3");?>">Teashop</a>
                   <a class="nav-item nav-link" href="pricing.html">Pricing</a>
                   <a class="nav-item nav-link" href="testimonies.html">Testimonies</a>
                   <a class="nav-item nav-link" href="<?php echo site_url('welcome/adminpage'); ?>">Admin</a>
@@ -50,7 +50,7 @@
       <!-- header section end -->
       <!-- about section start -->
       <div class="about_section layout_padding">
-         <?php ?>
+         <?php $this->load->view($namePage);?>
       </div>
       <!-- about section end -->
 
