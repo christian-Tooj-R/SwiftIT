@@ -40,7 +40,7 @@
                   <a class="nav-item nav-link" href="<?php echo site_url("accueilController/toggle/3");?>">Teashop</a>
                   <a class="nav-item nav-link" href="pricing.html">Pricing</a>
                   <a class="nav-item nav-link" href="testimonies.html">Testimonies</a>
-                  <a class="nav-item nav-link" href="contact.html">Contact</a>
+                  <a class="nav-item nav-link" href="<?php echo site_url('welcome/adminpage'); ?>">Admin</a>
                </div>
             </div>
             <div class="login_menu">
@@ -57,7 +57,7 @@
 
       <!-- footer section start --> 
       <div>
-         <?php $this->load->view("footer"); ?>
+         <?php $this->load->view("users/footer"); ?>
       </div>
       <!-- Javascript files-->
       <script src="<?php echo base_url('assets/js/jquery.min.js'); ?>"></script>
