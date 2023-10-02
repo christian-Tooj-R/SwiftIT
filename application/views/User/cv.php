@@ -1,88 +1,97 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  </head>
-  <body>
-    
-      
-       
-        
-          
-            
-              <div class="col-md-6 grid-margin stretch-card" style="margin-left: 300px;">
-                <div class="card">
-                  <div class="card-body">
-                   
-                    <form class="forms-sample">
-                      <div class="form-group">
-                        <label for="exampleFormControlSelect3">Service </label>
-                        <select class="form-control form-control-sm" id="exampleFormControlSelect3">
-                          <option>Informatique</option>
-                          <option>Informatique</option>
-                        </select>
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleInputUsername1">Poste</label>
-                        <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username" />
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleFormControlSelect3">Diplome  </label>
-                        <select class="form-control form-control-sm" id="exampleFormControlSelect3">
-                          <option>Bacc</option>
-                          <option>Bepc</option>
-                          <option>Cepe</option>
-                        </select>
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleFormControlSelect3">Sexe  </label>
-                        <select class="form-control form-control-sm" id="exampleFormControlSelect3">
-                          <option>Feminin</option>
-                          <option>Masculin</option>
-                         
-                        </select>
-                      </div>
-                    
-                      <div class="form-group">
-                        <label for="exampleInputUsername1">Age</label>
-                        <input type="number" class="form-control" id="exampleInputUsername1" placeholder="Username" />
-                      </div>
-                      <!-- <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" />
-                      </div> -->
-                      <div class="form-group">
-                        <label for="exampleFormControlSelect3">Situation</label>
-                        <select class="form-control form-control-sm" id="exampleFormControlSelect3">
-                          <option>Marie(e)</option>
-                
-                        </select>
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleInputUsername1">Adresse</label>
-                        <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username" />
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleInputUsername1">Annee d'experience</label>
-                        <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username" />
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleInputUsername1">Horaire</label>
-                        <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username" />
-                      </div>
-                  
-                      <button type="submit" class="btn btn-primary mr-2"> Valider </button>
-                   
-                    </form>
-                  </div>
-        
-        <!-- main-panel ends -->
-      </div>
-      <!-- page-body-wrapper ends -->
-    </div>
-    <!-- container-scroller -->
+  	<title>Contact Form 02</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link rel="stylesheet" href="<?php echo base_url("assets/css/inscription.css");?>">
 
-  </body>
+	</head>
+	<body>
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-12">
+					<div class="wrapper">
+						<div class="row no-gutters">
+							<div class="col-lg-8 col-md-7 order-md-last d-flex align-items-stretch">
+								<div class="contact-wrap w-100 p-md-5 p-4">
+									<h3 class="mb-4">Remplissez votre CV</h3>
+									<div id="form-message-warning" class="mb-4"></div> 
+				      		<div id="form-message-success" class="mb-4">
+				            Your message was sent, thank you!
+				      		</div>
+									<form method="POST" id="contactForm" name="contactForm" class="contactForm">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group">
+													<label class="label" for="name">Diplome</label>
+													<select class="form-control form-control-sm" name="diplome"  >
+														<option>Bacc</option>
+														<option>Bepc</option>
+														<option>Cepe</option>
+													  </select>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group">
+													<label class="label" >Sexe</label>
+													<select class="form-control form-control-sm" name="diplome"  >
+														<option>Feminin</option>
+														<option>Masculin</option>
+
+													  </select>
+												</div>
+											</div>
+											<div class="col-md-12"> 
+												<div class="form-group">
+													<label class="label" >Date de naissance</label>
+													<input type="date" class="form-control" name="date" id="date" placeholder="Email">
+												</div>
+											</div>
+
+											<div class="col-md-6">
+												<div class="form-group">
+													<label class="label" >Situation</label>
+													<select class="form-control form-control-sm" name="situation"  >
+														<option>Marie(e)</option>
+													  </select>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group">
+													<label class="label" for="#">Adresse</label>
+													<input type="text" class="form-control" name="adresse" placeholder="adresse" />
+											</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group">
+													<label class="label" for="#">Annee d'experience</label>
+													
+													<input type="text" class="form-control" name="annee" id="exampleInputUsername1" placeholder="annee d' experience" />
+												</div>
+											</div>
+
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="submit" value="Valider" class="btn btn-primary">
+													<div class="submitting"></div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+			          </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	</body>
 </html>
+
