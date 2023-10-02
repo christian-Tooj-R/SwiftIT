@@ -20,7 +20,41 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('accueil');
+		$this->load->view('index');
 		
-	}		
+	}
+	
+	public function addCv()
+	{
+		$this->load->view('User/cv');
+		
+	}
+	
+	/****************Login */
+	public function loginSign(){
+		$this->load->Model('User/User');
+		$this->load->helper('login_helper');
+
+		$email = $this->input->post("email");
+		$mdp = $this->input->post("mdp");
+		$data = $this->User->getUser()->result_array();
+
+		$value = verify($email,$mdp,$data);
+
+		if($value == 0){
+			redirect("adminController/index");
+		}else if($value == 1){
+			$data = $this->User->getUserByEmail($email,$mdp)->result_array();
+			$this->session->set_userdata('idUser',$data[0]['idutilisateur']);
+
+			redirect("accueilController/accueil");
+		}else{
+			$error['error'] = $this->errorMessage();
+			$this->load->view("index",$error);
+		}
+	}
+
+	public function errorMessage(){
+		return "Verifier votre mot de passe ou votre email!";
+	}
 }
